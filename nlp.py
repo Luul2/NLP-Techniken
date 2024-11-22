@@ -59,7 +59,7 @@ for i, topic in enumerate(lda_topic):
     print(f"Topic {i + 1}: {topic * 100:.2f}")
 
 # LSA
-lsa = TruncatedSVD(n_components=10, algorithm='randomized', n_iter=10,random_state=42)
+lsa = TruncatedSVD(n_components=6, algorithm='randomized', n_iter=10,random_state=42)
 lsa_data = lsa.fit_transform(data_tfidf)
 lsa_topic = lsa_data[0]
 n_words = 10

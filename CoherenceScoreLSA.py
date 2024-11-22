@@ -1,7 +1,7 @@
 import pandas as pd
 from gensim.corpora.dictionary import Dictionary
+from gensim.models import LsiModel
 from gensim.models.coherencemodel import CoherenceModel
-from gensim.models import LdaMulticore
 
 if __name__ == '__main__':
     data = pd.read_csv('clean_reviews.csv')
@@ -13,13 +13,12 @@ if __name__ == '__main__':
 
     coherence_scores = []
 
-    for i in range(2, 15):
-        lda_model = LdaMulticore(corpus=corpus,id2word=dictionary,num_topics=i,random_state=100,passes=10,chunksize=200,
-                                 workers=10)
+    for i in range(1, 11):
+        lsa_model = LsiModel(corpus=corpus, id2word=dictionary, num_topics=i, chunksize=200)
 
-        coherence_model_lda = CoherenceModel(model=lda_model, texts=tokens_clean_reviews, dictionary=dictionary,
+        coherence_model_lsi = CoherenceModel(model=lsa_model, texts=tokens_clean_reviews, dictionary=dictionary,
                                              coherence='c_v')
-        coherence_lda = coherence_model_lda.get_coherence()
+        coherence_lsi = coherence_model_lsi.get_coherence()
 
-        coherence_scores.append(coherence_lda)
-        print(f"Coherence Score für {i} Themen: {coherence_lda}")
+        coherence_scores.append(coherence_lsi)
+        print(f"Coherence Score für {i} Themen: {coherence_lsi}")
