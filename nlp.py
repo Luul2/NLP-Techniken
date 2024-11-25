@@ -73,6 +73,8 @@ print("\nReview 1 - LSA Topics: ")
 for i, topic in enumerate(lsa_topic):
     print(f"Topic {i + 1}: {topic * 100:.2f}")
 
+# Wordcloud
+
 
 
 
