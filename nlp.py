@@ -44,11 +44,11 @@ print(data_tfidf)
 
 # Themenmodellierung
 # LDA
-lda = LatentDirichletAllocation(n_components=10,learning_method='online',random_state=42,max_iter=1)
+lda = LatentDirichletAllocation(n_components=10,learning_method='online',random_state=42,max_iter=10)
 lda_data = lda.fit_transform(data_tfidf)
 lda_topic = lda_data[0]
 n_words = 10
-words = vect_tfidf.get_feature_names_out()
+words = vect_bow.get_feature_names_out()
 
 print("\nTop Words for each LDA Topic:")
 for topic_idx, topic in enumerate(lda.components_):
@@ -59,7 +59,7 @@ for i, topic in enumerate(lda_topic):
     print(f"Topic {i + 1}: {topic * 100:.2f}")
 
 # LSA
-lsa = TruncatedSVD(n_components=6, algorithm='randomized', n_iter=10,random_state=42)
+lsa = TruncatedSVD(n_components=4, algorithm='randomized', n_iter=10,random_state=42)
 lsa_data = lsa.fit_transform(data_tfidf)
 lsa_topic = lsa_data[0]
 n_words = 10
@@ -73,7 +73,6 @@ print("\nReview 1 - LSA Topics: ")
 for i, topic in enumerate(lsa_topic):
     print(f"Topic {i + 1}: {topic * 100:.2f}")
 
-# Wordcloud
 
 
 
