@@ -5,10 +5,9 @@ Dieses Projekt beschäftigt sich mit der Analyse eines Datensatzes von Disneylan
 Ziel des Projekts ist es, wiederkehrende Begriffe, zentrale Themen und Stimmungen in den Besucherrezensionen zu identifizieren und die gewonnenen Erkenntnisse zu bewerten.
 
 ## Inhaltsverzeichnis
-Das Projekt besteht aus folgenden Hauptschritten:
-- Datenvorverarbeitung
-- Vektorisierung (BoW & TF‑IDF)
-- Themenmodellierung (LSA & LDA)
-- Berechnung des Coherence Scores
-- Visualisierung der Ergebnisse
-- Reflexion & Herausforderungen
+- [Datenvorverarbeitung](#Datenvorverarbeitung)
+- [Vektorisierung (BoW & TF‑IDF)](#Vektorisierung))
+- [Themenmodellierung (LSA & LDA)](#Themenmodellierung))
+- [Berechnung des Coherence Scores](#Berechnung-des-Coherence-Scores)
+- [Visualisierung der Ergebnisse](#Visualisierung)
+- [Herausforderungen](#herausforderung)
