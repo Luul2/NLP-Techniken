@@ -8,6 +8,8 @@ Ziel des Projekts ist es, wiederkehrende Begriffe, zentrale Themen und Stimmunge
 - [Konzeptionsphase](#Konzeptionsphase)
 - [Datenvorverarbeitung](#Datenvorverarbeitung)
 - [Vektorisierung](#Vektorisierung)
+- [BoW](##BoW)
+- [TF-IDF](##TF-IDF)
 - [Berechnung des Coherence Scores](#Berechnung-des-Coherence-Scores)
 - [Themenmodellierung (LSA & LDA)](#Themenmodellierung)
 - [Visualisierung der Ergebnisse](#Visualisierung)
