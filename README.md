@@ -25,7 +25,7 @@ Eine Besucherbewertung über das Disneyland lautet beispielsweise: „This place
  - Tokenisierung des Textes in einzelne Wörter
  - Durchführung der Lemmatisierung (z. B. „is“ wird zu „be“)
 
-Für die Umsetzung der einzelnen Verarbeitungsschritte werden folgende Python-Bibliotheken eingesetzt:
+Für die Umsetzung der einzelnen Verarbeitungsschritte werden die folgenden Python-Bibliotheken eingesetzt:
  - Einlesen der Daten in Python ⇨ pandas
  - Textbereinigung ⇨ nltk
  - Datenkonvertierung und Themenextraktion ⇨ scikit-learn
