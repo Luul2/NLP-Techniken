@@ -44,7 +44,7 @@ Nach der Erstellung der Funktion wird `preprocess_text` auf die Spalte `Review_T
 ![NLP](bilder/1.png)
 
 ## Vektorisierung 
-Um die vorverarbeiteten Texte in eine numerische Darstellung zu überführen, erfolgt im nächsten Schritt die Vektorisierung mit Bag-of-Words (BoW) und TF-IDF. Hierfür werden die Klassen `CountVectorizer` und `TfidfVectorizer` aus der `scikit-learn`-Bibliothek verwendet. Bei der Vektorisierung werden sowohl Unigramme als auch Bigramme berücksichtigt. Zusätzlich wird die Anzahl auf 1000 Wörter beziehungsweise n-Gramme begrenzt. Das Ergebnis wird in einem DataFrame mit `pandas` gespeichert und ausgegeben. 
+Um die vorverarbeiteten Texte in eine numerische Darstellung zu überführen, erfolgt im nächsten Schritt die Vektorisierung mit BoW und TF-IDF. Hierfür werden die Klassen `CountVectorizer` und `TfidfVectorizer` aus der `scikit-learn`-Bibliothek verwendet. Bei der Vektorisierung werden sowohl Unigramme als auch Bigramme berücksichtigt. Zusätzlich wird die Anzahl auf 1000 Wörter beziehungsweise n-Gramme begrenzt. Das Ergebnis wird in einem DataFrame mit `pandas` gespeichert und ausgegeben. 
 
 ### BoW
 Bei der BoW-Vektorisierung ist zu erkennen, dass das Wort „absolutely“ in der ersten Kundenbewertung  den Wert 1 erhält. Dieser Wert gibt an, dass „absolutely“ genau einmal in der entsprechenden Rezension vorkommt.
