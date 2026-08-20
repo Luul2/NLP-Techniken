@@ -52,7 +52,7 @@ Bei der BoW-Vektorisierung ist zu erkennen, dass das Wort „absolutely“ in de
 ![NLP](bilder/2.png)
 
 ### TF-IDF
-Anders verhält es sich bei der TF-IDF-Vektorisierung, bei der das Wort „absolutely“ einen Wert von 0.216205 erhält. Dieser Wert ergibt sich aus der Häufigkeit des Wortes innerhalb der jeweiligen Rezension sowie aus seiner Häufigkeit im gesamten Korpus. Im Gegensatz zu BoW berücksichtigt TF-IDF somit nicht nur, wie häufig ein Wort in einer Rezension vorkommt, sondern auch, wie häufig es in den übrigen Rezensionen vertreten ist.
+Anders verhält es sich bei der TF-IDF-Vektorisierung, bei der das Wort „absolutely“ einen Wert von 0.216205 hat. Dieser Wert ergibt sich aus der Häufigkeit des Wortes innerhalb der jeweiligen Rezension sowie aus seiner Häufigkeit im gesamten Korpus. Im Gegensatz zu BoW berücksichtigt TF-IDF nicht nur, wie häufig ein Wort in einer Rezension vorkommt, sondern auch, wie häufig es in den übrigen Rezensionen vertreten ist.
 
 ![NLP](bilder/3.png)
 
