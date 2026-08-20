@@ -1,6 +1,6 @@
 # NLP-Techniken
 
-Dieses Projekt beschäftigt sich mit der Analyse eines Datensatzes von Disneyland-Bewertungen mithilfe verschiedener Methoden des Natural Language Processing (NLP). Nach der Datenvorverarbeitung werden die Texte mithilfe von Bag-of-Words (BoW) und  Term Frequency-Inverse Document Frequency (TF-IDF) in numerische Darstellungen überführt. Um die häufigsten Themen zu erfassen, gibt es zum einen die Latent Semantic Analysis (LSA), welche die Beziehung zwischen Dokumenten und Themen identifiziert. Andererseits existiert die Latent Dirichlet Allocation (LDA), welche die Dirichlet-Verteilung nutzt, um die Themen in den Dokumenten und die Wörter innerhalb der Themen zu modellieren. Zur Bestimmung der optimalen Themenanzahl muss der Coherence Score berechnet werden. Abschließend werden die wichtigsten Begriffe und Ergebnisse mithilfe von Wordclouds visuell dargestellt.
+Dieses Projekt analysiert Disneyland-Bewertungen mithilfe verschiedener NLP-Verfahren. Nach der Datenvorverarbeitung werden die Texte mit Bag of Words (BoW) und Term Frequency-Inverse Document Frequency (TF-IDF) vektorisiert und anschließend mittels Latent Semantic Analysis (LSA) und Latent Dirichlet Allocation (LDA) thematisch untersucht. Der Coherence Score dient dabei zur Bestimmung einer geeigneten Themenanzahl. Abschließend werden die Ergebnisse mithilfe von Wordcloud visualisiert.
 
 Ziel des Projekts ist es, wiederkehrende Begriffe, zentrale Themen und Stimmungen in den Besucherrezensionen zu identifizieren und die daraus gewonnenen Erkenntnisse zu analysieren und zu bewerten.
 
@@ -18,7 +18,7 @@ Ziel des Projekts ist es, wiederkehrende Begriffe, zentrale Themen und Stimmunge
 - [Fazit](#fazit)
 
 ## Konzeptionsphase
-Zunächst wird der Datensatz mit den Disneyland-Bewertungen als CSV-Datei über Kaggle bezogen und ein erster Überblick über die enthaltenen Daten gewonnen.
+Zunächst wird der Datensatz mit den Disneyland-Bewertungen als CSV-Datei über [Kaggle](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews) bezogen und ein erster Überblick über die enthaltenen Daten gewonnen.
 
 Eine Besucherbewertung über das Disneyland lautet beispielsweise: „This place is HUGE! Definately need more than one day. We had 3 children aged 11, 9 & 6“. Anhand dieses Beispiels wird die Notwendigkeit der Datenvorverarbeitung zur Textbereinigung verdeutlicht, welche wie folgt aussieht:
  - Konvertierung des Textes in Kleinbuchstaben „this place is huge …“
