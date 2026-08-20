@@ -57,7 +57,7 @@ Anders verhält es sich bei der TF-IDF-Vektorisierung, bei der das Wort „absol
 ![NLP](bilder/3.png)
 
 ## Berechnung-des-Coherence-Scores
-Vor der eigentlichen Themenmodellierung wurde zunächst die optimale Anzahl an Themen für die Modelle LDA und LSA bestimmt. Hierfür wurde der Coherence Score für verschiedene Themenanzahlen berechnet. Die Umsetzung erfolgte mit `LdaMulticore` und `LsiModel` aus der Bibliothek `gensim`. Für beide Modelle wurde die Anzahl der Themen von 1 bis 10 durchlaufen und der zugehörige Coherence Score ermittelt. 
+Vor der eigentlichen Themenmodellierung muss die optimale Anzahl an Themen für die Modelle LDA und LSA bestimmt werden. Hierfür wird der Coherence Score für verschiedene Themenanzahlen berechnet. Die Umsetzung erfolgt mit `LdaMulticore` und `LsiModel` aus der Bibliothek `gensim`. Für beide Modelle wird die Anzahl der Themen von 1 bis 10 durchlaufen und der zugehörige Coherence Score ermittelt. 
 Dabei erzielte LDA bei einer Themenanzahl von 10 den höchsten Coherence Score:
 
 ![NLP](bilder/4.png)
