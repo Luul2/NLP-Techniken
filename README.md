@@ -18,7 +18,7 @@ Ziel des Projekts ist es, wiederkehrende Begriffe, zentrale Themen und Stimmunge
 - [Fazit](#fazit)
 
 ## Konzeptionsphase
-Zunächst wird der Datensatz mit den Disneyland-Bewertungen als CSV-Datei über [Kaggle](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews) bezogen und ein erster Überblick über die enthaltenen Daten gewonnen.
+Zunächst wird der Datensatz mit den Disneyland-Bewertungen als CSV-Datei über [Kaggle](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews) bezogen und ein erster Überblick über die Daten gewonnen.
 
 Eine Besucherbewertung über das Disneyland lautet beispielsweise: „This place is HUGE! Definately need more than one day. We had 3 children aged 11, 9 & 6“. Anhand dieses Beispiels wird die Notwendigkeit der Datenvorverarbeitung zur Textbereinigung verdeutlicht, welche wie folgt aussieht:
  - Konvertierung des Textes in Kleinbuchstaben „this place is huge …“
