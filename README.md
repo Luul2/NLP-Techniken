@@ -32,7 +32,7 @@ Für die Umsetzung der einzelnen Verarbeitungsschritte werden die folgenden Pyth
  - Kohärenzberechnung ⇨ gensim
  - Visualisierung der häufigsten Wörter ⇨ wordcloud, matplotlib, pillow, numpy
 
-Zu Beginn werden in PyCharm die benötigten Bibliotheken installiert und in das Python-Projekt eingebunden. Anschließend werden die Disneyland-Bewertungen mithilfe von `read_csv()` aus pandas eingelesen und für die weitere Verarbeitung bereitgestellt.
+Zu Beginn werden in PyCharm die benötigten Bibliotheken installiert und in das Python-Projekt eingebunden. Anschließend werden die Disneyland-Bewertungen mithilfe von `read_csv()` aus `pandas` eingelesen und für die weitere Verarbeitung bereitgestellt.
 
 ## Datenvorverarbeitung
 Mithilfe der Funktion `preprocess_text` wird die Textvorverarbeitung durchgeführt. In dieser wird der Text in einzelne Wörter, sogenannte Tokens, aufgeteilt und in Kleinbuchstaben umgewandelt. Zudem erfolgt eine Entfernung der Stoppwörter mithilfe der englischen Stoppwortliste aus der Bibliothek von `nltk`. Zusätzlich werden Sonderzeichen und Zahlen herausgefiltert, sodass für die weitere Analyse ausschließlich alphabetische Wörter erhalten bleiben. Außerdem findet die Lemmatisierung statt, bei der die Wörter in ihre kanonische Grundform umgewandelt werden. Abschließend gibt die Funktion den vorverarbeiteten Text mit return `' '.join(words)` als zusammenhängenden String zurück.
@@ -68,7 +68,7 @@ Während für LSA eine Themenanzahl von 4 den höchsten Coherence Score erzielt:
 ![NLP](bilder/5.png)
 
 ## Themenmodellierung
-Für die LDA-Modellierung wurde `LatentDirichletAllocation` und für die LSA-Modellierung `TruncatedSVD` aus der Bibliothek `scikit-learn` verwendet. Über den Parameter `n_components` wurde für beide Modelle die zuvor ermittelte optimale Anzahl an Themen festgelegt. Anschließend wurden die Modelle mithilfe von `fit_transform()` auf die vorbereiteten Vektordarstellungen angewendet. Für jedes Thema wurden anschließend die zehn relevantesten Wörter extrahiert, um die inhaltlichen Schwerpunkte der einzelnen Themen besser interpretieren zu können. Zusätzlich wurde die Themenverteilung der ersten Bewertung ermittelt, um zu untersuchen, welchen Anteil die einzelnen Themen an der Rezension haben.
+Für die LDA-Modellierung wird `LatentDirichletAllocation` und für die LSA-Modellierung `TruncatedSVD` aus der Bibliothek `scikit-learn` verwendet. Über den Parameter `n_components` wird für beide Modelle die zuvor ermittelte optimale Anzahl an Themen festgelegt. Anschließend werden die Modelle mithilfe von `fit_transform()` auf die vorbereiteten Vektordarstellungen angewendet. Für jedes Thema werden die zehn relevantesten Wörter extrahiert, um die inhaltlichen Schwerpunkte der einzelnen Themen besser interpretieren zu können. Zusätzlich wird die Themenverteilung der ersten Bewertung ermittelt, um zu untersuchen, welchen Anteil die einzelnen Themen an der Rezension haben.
 
 ### LDA
 Ersichtlich wird bei LDA, dass die 10 extrahierten Themen von Aktivitäten und positiven Erlebnissen bis hin zu verschiedenen Disneyland-Parks weltweit, Service und geschlossenen Attraktionen reichen. Außerdem ist in der ersten Kundenbewertung auffällig, dass sich dessen Inhalt am stärksten auf das Thema 6 mit einem Wert von 74,02 fokussiert.
@@ -81,7 +81,7 @@ Die vier extrahierten Themen mit LSA sind überschaubar und beinhalten Aspekte w
 ![NLP](bilder/7.png)
 
 ## Visualisierung der Ergebnisse
-Abschließend wurde eine Wordcloud erstellt, um die am häufigsten verwendeten Begriffe aus den Rezensionen übersichtlich und anschaulich darzustellen. Hierfür wurden die Bibliotheken `matplotlib`, `pillow`, `numpy` und `wordcloud` verwendet.
+Abschließend wird eine Wordcloud erstellt, um die am häufigsten verwendeten Begriffe aus den Rezensionen übersichtlich und anschaulich darzustellen. Hierfür werden die Bibliotheken `matplotlib`, `pillow`, `numpy` und `wordcloud` verwendet.
 
 ![NLP](bilder/8.png)
 
