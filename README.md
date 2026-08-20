@@ -37,7 +37,7 @@ Zu Beginn werden in PyCharm die benötigten Bibliotheken installiert und in das 
 ## Datenvorverarbeitung
 Mithilfe der Funktion `preprocess_text` wird die Textvorverarbeitung durchgeführt. In dieser wird der Text in einzelne Wörter, sogenannte Tokens, aufgeteilt und in Kleinbuchstaben umgewandelt. Zudem erfolgt eine Entfernung der Stoppwörter mithilfe der englischen Stoppwortliste aus der Bibliothek von `nltk`. Zusätzlich werden Sonderzeichen und Zahlen herausgefiltert, sodass für die weitere Analyse ausschließlich alphabetische Wörter erhalten bleiben. Außerdem findet die Lemmatisierung statt, bei der die Wörter in ihre kanonische Grundform umgewandelt werden. Abschließend gibt die Funktion den vorverarbeiteten Text mit return `' '.join(words)` als zusammenhängenden String zurück.
 
-Nach der Erstellung der Funktion wird `preprocess_text` auf die Spalte `Review_Text` angewendet. Die bereinigten Daten werden anschließend in einer neuen CSV-Datei gespeichert und für die weiteren Analyseschritte bereitgestellt.
+Nach der Erstellung der Funktion wird `preprocess_text` auf die Spalte `Review_Text` angewendet. Die bereinigten Daten werden anschließend in einer neuen CSV-Datei gespeichert und somit für die weiteren Analyseschritte bereitgestellt.
 
 Überprüfung der bereinigten Daten durch eine Gegenüberstellung mit den Originaldaten:
 
