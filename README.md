@@ -1,6 +1,7 @@
 # NLP-Techniken
 
-Dieses Projekt analysiert Disneyland-Bewertungen mithilfe verschiedener NLP-Verfahren. Nach der Datenvorverarbeitung werden die Texte mit Bag of Words (BoW) und Term Frequency-Inverse Document Frequency (TF-IDF) vektorisiert und anschließend mittels Latent Semantic Analysis (LSA) und Latent Dirichlet Allocation (LDA) thematisch untersucht. Der Coherence Score dient dabei zur Bestimmung einer geeigneten Themenanzahl. Abschließend werden die Ergebnisse mithilfe von Wordcloud visualisiert.
+Dieses Projekt analysiert Disneyland-Bewertungen mithilfe verschiedener NLP-Verfahren. Nach der Datenvorverarbeitung werden die Texte mit Bag of Words (BoW) und Term Frequency-Inverse Document Frequency (TF-IDF) vektorisiert und anschließend mittels Latent Semantic Analysis (LSA) und Latent Dirichlet Allocation (LDA) thematisch untersucht. Der Coherence Score dient dabei zur Bestimmung einer geeigneten Themenanzahl. 
+Abschließend werden die Ergebnisse mithilfe von Wordcloud visualisiert.
 
 Ziel des Projekts ist es, wiederkehrende Begriffe, zentrale Themen und Stimmungen in den Besucherrezensionen zu identifizieren und die daraus gewonnenen Erkenntnisse zu analysieren und zu bewerten.
 
