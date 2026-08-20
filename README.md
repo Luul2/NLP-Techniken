@@ -7,9 +7,9 @@ Ziel des Projekts ist es, wiederkehrende Begriffe, zentrale Themen und Stimmunge
 ## Inhaltsverzeichnis
 - [Konzeptionsphase](#Konzeptionsphase)
 - [Datenvorverarbeitung](#Datenvorverarbeitung)
-- [Vektorisierung](#Vektorisierung)
-- [BoW](##BoW)
-- [TF-IDF](##TF-IDF)
+- [Vektorisierung](#vektorisierung)
+  - [BoW](#bow)
+  - [TF-IDF](#tf-idf)
 - [Berechnung des Coherence Scores](#Berechnung-des-Coherence-Scores)
 - [Themenmodellierung (LSA & LDA)](#Themenmodellierung)
 - [Visualisierung der Ergebnisse](#Visualisierung)
@@ -56,3 +56,4 @@ Anders verhält es sich bei der TF-IDF-Vektorisierung, bei der das Wort „absol
 ![NLP](bilder/3.png)
 
 ## Berechnung-des-Coherence-Scores
+
